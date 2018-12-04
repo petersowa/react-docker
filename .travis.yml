@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t devspeter/react-docker -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run devspeter/react-docker npm run test -- --coverage
